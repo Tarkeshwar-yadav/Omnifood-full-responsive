@@ -1,0 +1,571 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+:root {
+  --description-secondary: rgb(85, 85, 85);
+  --heading-primary: rgb(51, 51, 51);
+  --color-peach: #fdf2e9;
+  --color-orange: #e67e22;
+  --color-warm-orange-shade: #e98d3c;
+  --color-orange-dark: #cf711f;
+  --color-white: #ffff;
+  --color-black: #333;
+  --color-green: #51cf66;
+  --color-gray: #555;
+  --vibrant-lime-green: #94d82d;
+  --yellow-dark: #ffd43b;
+  --color-brown: #45260a;
+  --font-main: "Rubik", sans-serif;
+}
+.bg-peach {
+  background-color: var(--color-peach);
+}
+
+/* Navbar Section */
+.navbar {
+  margin-top: 25px;
+}
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease-in-out;
+}
+
+.omnifood-logo {
+  height: 22px;
+  width: auto;
+  max-width: 100%;
+}
+.custom-font {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 15px;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--color-orange) !important;
+}
+.nav-main-list {
+  gap: 1.5rem;
+}
+.btn-custom {
+  background-color: var(--color-orange);
+  border-radius: 9px;
+  color: #fff;
+
+  font-size: 18px;
+  font-weight: 500;
+  padding: 6.5px 23px;
+  transition: all 0.2s ease;
+  text-align: center;
+  display: inline-block;
+  line-height: 1.5;
+}
+.btn-custom:hover {
+  background-color: var(--color-orange-dark);
+  color: #fff;
+}
+
+/* navbar ends */
+
+/* hero section starts */
+
+.primary-heading {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 54.6px;
+  letter-spacing: -0.5px;
+  color: var(--heading-primary);
+}
+.hero-description {
+  color: var(--description-secondary);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+/* For both buttons */
+.title-box-button1,
+.title-box-button2 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 40px 8px 40px;
+  border-radius: 9px;
+  transition: all 0.2s ease;
+  text-align: center;
+  display: inline-block;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.title-box-button1 {
+  background-color: var(--color-orange);
+  color: #fff;
+}
+
+.title-box-button1:hover {
+  background-color: var(--color-orange-dark);
+  color: #fff;
+}
+
+.title-box-button2 {
+  color: var(--description-secondary);
+  border: 4px solid transparent;
+  outline: none;
+}
+
+.title-box-button2:hover {
+  background-color: transparent;
+  border-color: var(--color-white);
+}
+
+.delivered-meals .customer {
+  object-fit: cover;
+  border: 3px solid white;
+  margin-left: -20px;
+  z-index: 1;
+}
+.delivered-description {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  color: var(--description-secondary);
+}
+
+@media (max-width: 375px) {
+  .primary-heading {
+    font-size: 32px; /* reduced from 54px */
+    line-height: 38px; /* adjusted for readability */
+    text-align: center;
+  }
+
+  .hero-description {
+    font-size: 16px; /* reduced from 20px */
+    line-height: 26px; /* adjusted for tight spaces */
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .title-box-button1,
+  .title-box-button2 {
+    font-size: 16px; /* slightly smaller button text */
+    padding: 8px 24px;
+    display: block;
+    width: 100%; /* full-width for mobile-friendly tap targets */
+    margin-bottom: 10px; /* space between stacked buttons */
+    text-align: center;
+  }
+
+  .hero-button {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .primary-heading {
+    font-size: 40px; /* smaller than desktop, larger than mobile */
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .hero-description {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .title-box-button1,
+  .title-box-button2 {
+    font-size: 18px;
+    padding: 10px 32px;
+    width: 100%;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .hero-button {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 1024px) {
+  .primary-heading {
+    font-size: 46px;
+    line-height: 52px;
+    text-align: center;
+  }
+
+  .hero-description {
+    font-size: 19px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .title-box-button1,
+  .title-box-button2 {
+    font-size: 18px;
+    padding: 10px 36px;
+    width: 100%;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .hero-button {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* hero section ends */
+
+/* feature section starts */
+
+.heading-featured-in {
+  color: var(--description-secondary);
+  font-weight: 500;
+  font-size: 14px;
+}
+.logos img {
+  height: 2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+
+
+
+
+
+
+/* feature section ends */
+
+/* section how */
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+.number-one {
+  font-size: 5.4rem;
+  font-weight: 500;
+  color: #ddd;
+  margin-bottom: 0.5rem;
+}
+
+.heading1 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+
+.paragraph1 {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.circle--1 {
+  width: 320px;
+  height: 320px;
+  background-color: #ffb347;
+  top: -50%;
+  bottom: -50%;
+  transform: translateY(68%);
+}
+
+.circle--2 {
+  width: 250px;
+  height: 250px;
+  background-color: #ff7f50;
+  top: -30%;
+  bottom: -30%;
+  transform: translateY(70%);
+}
+
+.image1 {
+  z-index: 1;
+}
+
+/* hero section resposivness */
+@media (max-width: 768px) {
+  .number-one {
+    font-size: 5rem;
+  }
+
+  .heading1 {
+    font-size: 2.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.6rem;
+  }
+
+
+}
+
+/* hero section ends  */
+
+/* meal-section starts */
+
+.subheading {
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  color: #222;
+}
+
+.meal {
+  background-color: #fff;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.meal:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.meal-img {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.meal-tag {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tag--vegetarian {
+  background-color: var(--color-green);
+  font-size: 0.75rem;
+}
+.tag--vegan {
+  background-color: var(--vibrant-lime-green);
+  font-size: 0.75rem;
+}
+.tag--paleo {
+  background-color: var(--yellow-dark);
+  font-size: 0.75rem;
+}
+.meal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.meal-detail {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1rem;
+  color: var(--color-gray);
+}
+
+.meal-icon {
+  font-size: 1.2rem;
+  color: var(--color-orange);
+}
+
+.diet-card {
+  background-color: var(--color-white);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.diet-title {
+  font-size: 1.8rem;
+  color: var();
+}
+
+.diet-list li {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #444;
+}
+
+.diet-list i {
+  color: var(--color-orange);
+  font-size: 1.2rem;
+}
+
+.see-all-link {
+  font-size: 1.2rem;
+  color: var(--color-orange);
+
+  transition: all 4s ease;
+  text-decoration: underline;
+}
+
+.see-all-link:hover {
+  color: var(--color-orange);
+  text-decoration: none;
+}
+/* meals section ends */
+
+/* testimonials section starts */
+
+.img-hover {
+  transition: transform 0.3s ease-in-out;
+}
+.img-hover:hover {
+  transform: scale(1.2);
+}
+
+/* testimonials section ends */
+
+/* pricing section starts */
+.best-value-sticker {
+  position: absolute;
+  top: 30px;
+  right: -80px;
+  background-color: #f7c948;
+  color: #333;
+  padding: 0.2rem 5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transform: rotate(45deg);
+  z-index: 10;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+.pricing-plan {
+  overflow: hidden;
+  border: none;
+}
+.pricing-plan--starter {
+  border: 3px solid var(--color-peach);
+}
+
+.plan-price {
+  font-size: 62px;
+}
+.list-icon {
+  color: var(--color-orange);
+}
+
+.btn--full {
+  background-color: var(--color-orange);
+}
+.btn--full:hover {
+  background-color: var(--color-orange-dark);
+}
+
+.feature-icon {
+  color: #e67e22;
+  font-size: 35px;
+}
+
+.icon-wrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CTA section  */
+.bg-warm-orange-shade {
+  background-color: var(--color-warm-orange-shade);
+}
+.cta-heading {
+  color: var(--color-brown);
+}
+.cta-paragraph {
+  color: var(--color-brown);
+}
+
+.input-custom {
+  font-size: 14px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+
+.input-custom::placeholder {
+  text-align: left;
+  color: #999;
+}
+
+/* Custom CTA button styling */
+
+.cta-button {
+  font-size: 14px;
+  padding: 10px 16px;
+  color: #fff;
+  background-color: var(--color-brown);
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--color-white);
+}
+
+/* Image adjustments */
+.image-girl-meal {
+  max-width: 100%;
+  height: auto;
+}
+footer a {
+  color: var(--color-black);
+}
+footer a:hover {
+  color: var(--color-gray);
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 991.98px) {
+  .rounded-lg-end {
+    border-radius: 0 !important;
+  }
+}
+
+/* cta section ends */
+
+/* footer section */
+
+.footer-tags {
+  color: var(--color-gray);
+}
