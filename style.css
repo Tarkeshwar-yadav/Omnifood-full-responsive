@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
+
 }
 
 :root {
@@ -84,8 +85,14 @@
   font-weight: 700;
   line-height: 54.6px;
   letter-spacing: -0.5px;
+ 
+  max-width: 100%;
+ 
+  overflow-wrap: break-word;
+  word-break: break-word;
   color: var(--heading-primary);
 }
+
 .hero-description {
   color: var(--description-secondary);
   font-size: 20px;
@@ -142,25 +149,25 @@
 
 @media (max-width: 375px) {
   .primary-heading {
-    font-size: 32px; /* reduced from 54px */
-    line-height: 38px; /* adjusted for readability */
+    font-size: 32px; 
+    line-height: 38px; 
     text-align: center;
   }
 
   .hero-description {
-    font-size: 16px; /* reduced from 20px */
-    line-height: 26px; /* adjusted for tight spaces */
+    font-size: 16px; 
+    line-height: 26px; 
     text-align: center;
     margin-top: 1rem;
   }
 
   .title-box-button1,
   .title-box-button2 {
-    font-size: 16px; /* slightly smaller button text */
+    font-size: 16px; 
     padding: 8px 24px;
     display: block;
-    width: 100%; /* full-width for mobile-friendly tap targets */
-    margin-bottom: 10px; /* space between stacked buttons */
+    width: 100%;
+    margin-bottom: 10px; 
     text-align: center;
   }
 
@@ -226,6 +233,26 @@
     align-items: center;
   }
 }
+
+
+/* hero section resposivness */
+@media (max-width: 768px) {
+  .number-one {
+    font-size: 5rem;
+  }
+
+  .heading1 {
+    font-size: 2.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.6rem;
+  }
+
+
+}
+
+/* hero section ends  */
 
 /* hero section ends */
 
@@ -315,26 +342,6 @@
 .image1 {
   z-index: 1;
 }
-
-/* hero section resposivness */
-@media (max-width: 768px) {
-  .number-one {
-    font-size: 5rem;
-  }
-
-  .heading1 {
-    font-size: 2.2rem;
-  }
-
-  .heading-secondary {
-    font-size: 2.6rem;
-  }
-
-
-}
-
-/* hero section ends  */
-
 /* meal-section starts */
 
 .subheading {

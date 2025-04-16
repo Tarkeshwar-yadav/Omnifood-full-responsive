@@ -23,10 +23,10 @@
 <body>
   <!-- navvar starts -->
   <nav id="main-navbar" class="navbar navbar-expand-lg bg-peach px-4 mt-0 py-4">
+    <div class="container-fluid d-flex align-items-center justify-content-between flex-nowrap">
 
-    <div class="container-fluid">
       <!-- Logo -->
-      <a class="navbar-brand d-flex align-items-center mx-3" href="#">
+      <a class="navbar-brand d-flex align-items-center me-3" href="#">
         <img src="images/omnifood-logo.png" alt="Omnifood Logo" class="omnifood-logo" />
       </a>
 
@@ -37,31 +37,31 @@
       </button>
 
       <!-- Collapsible Nav -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-4 custom-font">
-          <div class="nav-main-list d-flex align-items-center">
-            <li class="nav-item me-4">
-              <a class="nav-link active text-dark" href="#">How it works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active text-dark" href="#">Meals</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active text-dark" href="#">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active text-dark" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <button class="btn btn-custom ms-lg-3 mt-3 mt-lg-0" type="submit">
-                Try for free
-              </button>
-            </li>
-          </div>
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center custom-font flex-row">
+          <li class="nav-item me-4">
+            <a class="nav-link text-dark" href="#">How it works</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link text-dark" href="#">Meals</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link text-dark" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link text-dark" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-custom ms-lg-3 mt-2 mt-lg-0" type="submit">
+              Try for free
+            </button>
+          </li>
         </ul>
       </div>
+
     </div>
   </nav>
+
 
   <!-- hero section -->
 
@@ -76,8 +76,8 @@
               A healthy meal delivered to your door, every single day
             </h1>
             <p class="hero-description mt-4">
-              The smart 365-days-per-year food subscription that will 
-              make you eat healthy again. Tailored to your personal tastes 
+              The smart 365-days-per-year food subscription that will
+              make you eat healthy again. Tailored to your personal tastes
               and nutritional needs.
             </p>
 
@@ -258,7 +258,7 @@
             <div class="meal-item p-4">
               <div class="meal-tag mb-3">
                 <span
-                  class="tag tag--vegetarian border border-2 rounded-pill px-3 py-1 text-white fw-bold text-uppercase">Vegetarian</span>
+                  class="tag tag--vegetarian border border-2 rounded-pill px-3 py-1  fw-bold text-uppercase">Vegetarian</span>
               </div>
 
               <p class="meal-title mb-4">Japanese Gyozas</p>
@@ -290,9 +290,9 @@
             <div class="meal-item p-4">
               <div class="meal-tag mb-3">
                 <span
-                  class="tag tag--vegan border border-2 rounded-pill px-3 py-1 text-white fw-bold text-uppercase">Vegan</span>
+                  class="tag tag--vegan border border-2 rounded-pill px-3 py-1  fw-bold text-uppercase">Vegan</span>
                 <span
-                  class="tag tag--paleo border border-2 rounded-pill px-3 py-1 text-white fw-bold text-uppercase">paleo</span>
+                  class="tag tag--paleo border border-2 rounded-pill px-3 py-1 fw-bold text-uppercase">paleo</span>
 
               </div>
 
@@ -687,13 +687,15 @@
               <div class="row gx-3 align-items-end">
                 <div class="col-md-6 mb-3">
                   <label for="full-name" class="form-label fw-bold">Full Name</label>
-                  <input id="full-name" type="text" class="form-control input-custom" placeholder="John Smith" required />
+                  <input id="full-name" type="text" class="form-control input-custom" placeholder="John Smith"
+                    required />
                 </div>
                 <div class="col-md-6 mb-3">
                   <label for="email" class="form-label fw-bold">Email address</label>
-                  <input id="email" type="email" class="form-control input-custom" placeholder="me@example.com" required />
+                  <input id="email" type="email" class="form-control input-custom" placeholder="me@example.com"
+                    required />
                 </div>
-                <div class="col-md-8 mb-3 w-50">
+                <div class="col-md-8 mb-3 w-auto">
                   <label for="select-where" class="form-label fw-bold">Where did you hear from us?</label>
                   <select id="select-where" class="form-select input-custom" required>
                     <option value="">Please choose one option:</option>
@@ -703,15 +705,15 @@
                     <option value="ad">Facebook ad</option>
                     <option value="others">Others</option>
                   </select>
-                  
+
                 </div>
-                <div class="col-md-4 col-lg-4 d-flex align-self-center h-100 mt-3 mt-md-3 w-50">
+                <div class="col-md-4 col-lg-4 d-flex align-self-center h-100 mt-3 mt-md-3 w-auto">
                   <button type="submit" class="btn cta-button w-100 fw-bold fs-6">Sign up now</button>
                 </div>
               </div>
             </form>
-            
-            
+
+
           </div>
         </div>
 
@@ -729,9 +731,9 @@
   <footer class="footer-section bg-white pt-5 pb-4 mb-5 mt-5 footer-tags  border-top border-gray">
 
     <div class="container mt-5 pt-5 ">
-      <div class="row gy-4">
+      <div class="row gy-4 ">
         <!-- Logo and Social -->
-        <div class="col-md-3">
+        <div class=" col-md-6 col-sm-6 col-lg-3 order-4 order-lg-0  ">
           <a class="navbar-brand d-flex align-items-center " href="#">
             <img src="images/omnifood-logo.png" alt="Omnifood Logo" class="omnifood-logo mb-3" />
           </a>
@@ -746,17 +748,17 @@
         </div>
 
         <!-- Contact -->
-        <div class="col-md-3 footer-tags">
-          <h6 class="fw-bold mb-5">Contact us</h6>
+        <div class=" col-md-6 col-sm-6 col-lg-3 order-5 order-lg-0 footer-tags">
+          <h6 class="fw-bold mb-4">Contact us</h6>
           <p class=" mb-1">623 Harrison St., 2nd Floor</p>
-          <p class=" mb-5">San Francisco, CA 94107</p>
+          <p class=" mb-4">San Francisco, CA 94107</p>
           <p class=" mb-1">📞 415-201-6370</p>
-          <p class="">✉️ hello@omnifood.com</p>
+          <p class="mb-1">✉️ hello@omnifood.com</p>
         </div>
 
         <!-- Account -->
-        <div class="col-md-2">
-          <h6 class="fw-bold mb-5">Account</h6>
+        <div class=" col-md-4 col-sm-4 col-lg-2 ">
+          <h6 class="fw-bold mb-4">Account</h6>
           <ul class="list-unstyled ">
             <li class="mb-3 "><a href="#" class="text-decoration-none ">Create account</a></li>
             <li class="mb-3"><a href="#" class="text-decoration-none  ">Sign in</a></li>
@@ -766,8 +768,8 @@
         </div>
 
         <!-- Company -->
-        <div class="col-md-2">
-          <h6 class="fw-bold mb-5">Company</h6>
+        <div class=" col-md-4 col-sm-4 col-lg-2 ">
+          <h6 class="fw-bold mb-4">Company</h6>
           <ul class="list-unstyled ">
             <li class="mb-3"><a href="#" class="text-decoration-none ">About Omnifood</a></li>
             <li class="mb-3"><a href="#" class="text-decoration-none ">For Business</a></li>
@@ -777,8 +779,8 @@
         </div>
 
         <!-- Resources -->
-        <div class="col-md-2 footer-tags">
-          <h6 class="fw-bold mb-5">Resources</h6>
+        <div class=" col-md-4 col-sm-4 col-lg-2 footer-tags ">
+          <h6 class="fw-bold mb-4">Resources</h6>
           <ul class="list-unstyled">
             <li class="mb-3"><a href="#" class="text-decoration-none ">Recipe directory</a></li>
             <li class="mb-3"><a href="#" class="text-decoration-none ">Help center</a></li>
